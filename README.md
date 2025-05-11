@@ -1,80 +1,100 @@
-## 🎯 **Objetivo do Desafio**
+# Studio Ghibli - Catálogo de Filmes
 
-Avaliar sua habilidade de desenvolver uma aplicação com **React**, utilizando **JavaScript** (ou **TypeScript**, se desejar), consumindo uma **API pública real** e aplicando boas práticas de estruturação de componentes, manipulação de estado e interações com o usuário.
+### Feito por Lucas Rodrigues
 
-## 📜 **Descrição**
+Uma aplicação para explorar, filtrar e gerenciar seu catálogo pessoal de filmes do Studio Ghibli.
 
-Você deverá desenvolver uma aplicação que consome a API pública do [Studio Ghibli](https://ghibliapi.vercel.app/#tag/Films) e exibe uma lista de filmes do estúdio com suas respectivas informações e algumas opções de filtro/ações nessa lista, conforme especificado a seguir:
+## 📋 Índice
 
-> ⚠️ O desafio deve ser implementado utilizando a versão mais recente do React com **javascript** ou **typescript.** Busque desenvolver uma interface agradável e legível (não precisa ser um design incrível, mas bem organizada)
+- [🚀 Instalação e Execução](#-instalação-e-execução)
+- [🛠️ Ferramentas Utilizadas](#️-ferramentas-utilizadas)
+- [✅ Requisitos Implementados](#-requisitos-implementados)
 
+## 🚀 Instalação e Execução
 
-## 🔎 **Requisitos Funcionais**
+### Pré-requisitos
 
-### ✅ Obrigatórios
+- Node.js (v16 ou superior)
+- npm ou yarn
 
-- [ ]  Listar filmes com as seguintes informações
-    - Imagem do filme
-    - Título
-    - Ano de lançamento
-    - Duração
-    - Sinopse
-    - Diretor e Produtor
-    - Nota de avaliação (campo `rt_score`)
-- [ ]  Marcar o filme como assistido
-- [ ]  Marcar o filme como favorito
-- [ ]  Filtrar os filmes por título através de um campo de texto
-- [ ]  Buscar palavras do filtro de texto na sinopse do filme
-    - Ao selecionar a opção “Incluir sinopse na busca**”,** além de filtrar os filmes, também deve destacar o texto buscado na sinopse com alguma cor.
-- [ ]  Adicionar anotações de texto a um filme
-- [ ]  Adicionar, junto à anotação, uma avaliação pessoal de 1 a 5 estrelas
-- [ ]  Filtrar os filmes por:
-    - Assistido
-    - Favorito
-    - Com anotação.
-    - Número de estrelas
-- [ ]  Ordenar filmes (de forma crescente e decrescente) por:
-    - Título
-    - Duração
-    - Avaliação pessoal
-    - Nota de avaliação (campo `rt_score`)
+### Instalação
 
-### ✨ Desejáveis
+1. Clone o repositório:
+   ```bash
+   git clone <url-do-repositório>
+   cd frontend-challenge-truckpag
+   ```
 
-- [ ]  Utilizar **TypeScript**
-- [ ]  Implementar responsividade básica
-- [ ]  Salvar
-- [ ]  Adicionar mensagens toast para as operações
-    - Marcar/desmarcar o filme como assistido, favorito;
-    - Adicionar/editar/remover anotação;
-- [ ]  Escrever pelo menos 1 **teste unitário** (ex: botão de favorito ou função de marcação)
-- [ ]  Separação clara de responsabilidades (componentes, serviços de API, etc.)
-- [ ]  Utilizar biblioteca de estilo (Styled-components, Tailwind, Shadcn-ui, etc.)
-- [ ]  Utilizar Context API ou uma solução de estado global (Redux, zustand, etc.)
-- [ ]  Utilizar solução para gerenciar estado assíncrono (axios, tanstack query, etc.)
+2. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-## 💻 Sugestão de interface
+3. Execute a aplicação em modo de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-Segue o deploy abaixo com uma sugestão de interface para a implementação do desafio. Mas claro, sinta-se à vontade para imprimir seu estilo próprio durante a implementação:
-[Versão online](https://v0-ghibli-movie-app.vercel.app/)
-* * *
+4. Acesse a aplicação em:
+   ```
+   http://localhost:5173
+   ```
 
-📦 **Entrega**
---------------
+## 🛠️ Ferramentas Utilizadas
 
-1.  Inclua um `README.md` com:
-    
-    *   Instruções de instalação e execução.
-        
-    *   Ferramentas utilizadas.
-        
-    *   Quais requisitos foram implementados.
-        
-    *   Se aplicável, como rodar os testes.
-        
+- **React**: Biblioteca para construção de interfaces (v18)
+- **TypeScript**: Superset tipado de JavaScript
+- **Vite**: Ferramenta de build rápida e moderna
+- **Styled Components**: Biblioteca para estilização com CSS-in-JS
+- **React Query**: Biblioteca para gerenciamento de estado assíncrono
+- **React Toastify**: Biblioteca para exibição de notificações toast
+- **React Icons**: Biblioteca de ícones
+- **Axios**: Cliente HTTP para requisições à API
 
-* * *
+## ✅ Requisitos Implementados
 
-* * *
+### Requisitos Obrigatórios ✓
 
-💡 **Nota**: O foco está na organização, clareza e qualidade do código — não necessariamente na completude ou complexidade. Explique suas decisões, use commits claros, e divirta-se com o desafio!
+- ✅ Listagem de filmes com:
+  - Imagem do filme
+  - Título
+  - Ano de lançamento
+  - Duração
+  - Sinopse
+  - Diretor e Produtor
+  - Nota de avaliação (campo `rt_score`)
+- ✅ Marcação de filme como assistido
+- ✅ Marcação de filme como favorito
+- ✅ Filtro de filmes por título através de campo de texto
+- ✅ Busca de palavras do filtro na sinopse do filme com destaque
+- ✅ Adição de anotações de texto a um filme
+- ✅ Adição de avaliação pessoal de 1 a 5 estrelas
+- ✅ Filtros de filmes por:
+  - Assistido
+  - Favorito
+  - Com anotação
+  - Número de estrelas
+- ✅ Ordenação de filmes (crescente/decrescente) por:
+  - Título
+  - Duração
+  - Avaliação pessoal
+  - Nota de avaliação
+
+### Requisitos Desejáveis ✓
+
+- ✅ Utilização de TypeScript
+- ✅ Implementação de responsividade básica
+- ✅ Salvamento de dados no localStorage
+- ✅ Mensagens toast para operações
+- ✅ Separação clara de responsabilidades (componentes, serviços, etc.)
+- ✅ Utilização de biblioteca de estilo (Styled-components)
+- ✅ Utilização de Context API
+- ✅ Utilização de solução para estado assíncrono (React Query)
+
+---
+
+Projeto desenvolvido como parte do desafio técnico para a vaga de Desenvolvedor Frontend na Truckpag.
